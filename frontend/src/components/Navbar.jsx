@@ -23,7 +23,6 @@ const Navbar = () => {
   });
 
   const role = meData?.user?.role;
-  console.log("User role:", role);
 
   const cartCount = useCart((s) =>
     s.items.reduce((n, line) => n + line.quantity, 0),
