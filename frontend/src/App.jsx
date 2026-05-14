@@ -7,8 +7,8 @@ import {
 } from "@clerk/react";
 import PageLoader from "./components/PageLoader";
 import Layout from "./components/Layout";
-// import { Routes, Route, Navigate } from "react-router";
-// import HomePage from "./pages/HomePage";
+import { Routes, Route, Navigate } from "react-router";
+import HomePage from "./pages/HomePage";
 // import CartPage from "./pages/CartPage";
 // import OrdersPage from "./pages/OrdersPage";
 // import CheckoutReturnPage from "./pages/CheckoutReturnPage";
@@ -27,6 +27,9 @@ function App() {
 
   return (
     <Layout>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
     </Layout>
   );
 }
