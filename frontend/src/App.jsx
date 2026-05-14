@@ -9,7 +9,7 @@ import PageLoader from "./components/PageLoader";
 import Layout from "./components/Layout";
 import { Routes, Route, Navigate } from "react-router";
 import HomePage from "./pages/HomePage";
-// import CartPage from "./pages/CartPage";
+import CartPage from "./pages/CartPage";
 // import OrdersPage from "./pages/OrdersPage";
 // import CheckoutReturnPage from "./pages/CheckoutReturnPage";
 // import ProductDetailPage from "./pages/ProductDetailPage";
@@ -29,6 +29,7 @@ function App() {
     <Layout>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/cart" element={<CartPage />} />
       </Routes>
     </Layout>
   );
